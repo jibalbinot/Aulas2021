@@ -1,3 +1,4 @@
+package br.com.opet.banco;
 
 public class Endereco {
 	private String logradouro;

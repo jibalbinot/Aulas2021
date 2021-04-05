@@ -1,3 +1,4 @@
+package br.com.opet.banco;
 public class Cliente {
 	private String nome;
 	//criacao e a ligacao dos objetos

@@ -1,3 +1,4 @@
+package br.com.opet.banco;
 public class Principal {
 
 	public static void main(String[] args) {
