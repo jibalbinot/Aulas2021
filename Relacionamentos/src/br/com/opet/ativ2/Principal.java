@@ -16,6 +16,9 @@ public class Principal {
 		c1.getB().setPreco(2000);
 		c1.getB().setModelo("Padrão");
 		c1.getB().setFabricante("Racing");
+		c1.getM().setPotencia(2.0);
+		c1.getM().setFabricante("GM");
+		c1.getM().setPreco(24000);
 
 		c2.getP().setPreco(550);
 		c2.getP().setFabricante("Michelin");

@@ -1,5 +1,9 @@
 package br.com.opet.ativ2;
-
+/**
+ * Classe responsável por moldar o Motor
+ *
+ * @author Armenegildo Zegna
+ */
 public class Motor {
 	private double potencia;
 	private double preco;

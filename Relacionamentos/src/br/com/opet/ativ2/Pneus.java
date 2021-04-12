@@ -1,5 +1,9 @@
 package br.com.opet.ativ2;
-
+/**
+ * Classe responsável por moldar os Pneus
+ *
+ * @author Manoel Santos da Silva
+ */
 public class Pneus {
 	private double preco;
 	private String tipo;

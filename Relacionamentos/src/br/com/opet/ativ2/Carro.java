@@ -1,5 +1,11 @@
 package br.com.opet.ativ2;
-
+/**
+ * Classe responsável por moldar as Carros
+ * Um carro nasce já com uma instância
+ * de um Motor, Bancos e Pneus
+ *
+ * @author Jeysonn Isaac Balbinot
+ */
 public class Carro {
 	private Pneus p = new Pneus();
 	private Motor m = new Motor(1.5, 10000.00, "Honda");
@@ -39,6 +45,12 @@ public class Carro {
 		return codigo;
 	}
 
+	/**
+     * Método Mostra irá mostrar todos os atributos da classe Carro
+     *
+     * @param nenhum
+     * @return void
+     */
 	public void mostra() {
 		System.out.println("Carro");
 		System.out.println("-Codigo....: " + this.codigo);
