@@ -6,6 +6,11 @@ public class Gerente extends Funcionario {
 	private int numeroDeFuncionariosGerenciados;
 
 	@Override
+	public double getBonificacao() {
+		return this.getSalario() * 0.15;
+	}
+	
+	@Override
 	public void mostra() {
 		System.out.println("Gerente");
 		super.mostra();//casa seja interessante usar o código da classe mãe (superclasse)

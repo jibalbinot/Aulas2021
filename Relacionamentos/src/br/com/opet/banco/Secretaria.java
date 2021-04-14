@@ -11,5 +11,11 @@ public class Secretaria extends Funcionario {
 		this.ramal = ramal;
 	}
 	
+	@Override
+	public void mostra() {
+		System.out.println("Secretária");
+		super.mostra();
+		System.out.println("Ramal: "+this.getRamal());
+	}
 	
 }

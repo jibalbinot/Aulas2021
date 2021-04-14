@@ -5,11 +5,16 @@ public class Funcionario {
 	private String cpf;
 	private double salario;
 
+	public double getBonificacao() {
+		return this.getSalario() * 0.10;
+	}
+
 	public void mostra() {
 		System.out.println("-----------------");
-		System.out.println("Nome...: " + this.getNome());
-		System.out.println("CPF....: " + this.getCpf());
-		System.out.println("Salario: " + this.getSalario());
+		System.out.println("Nome........: " + this.getNome());
+		System.out.println("CPF.........: " + this.getCpf());
+		System.out.println("Salario.....: " + this.getSalario());
+		System.out.println("Bonificacao.: "+this.getBonificacao());
 	}
 
 	public String getNome() {

@@ -11,4 +11,12 @@ public class Telefonista extends Funcionario {
 		this.estacaoDeTrabalho = estacaoDeTrabalho;
 	}
 	
+	@Override
+	public void mostra() {
+		System.out.println("Telefonista");
+		super.mostra();
+		System.out.println("Estação de Trabalho: "+this.getEstacaoDeTrabalho());
+		System.out.println();
+	}
+	
 }

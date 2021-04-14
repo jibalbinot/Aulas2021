@@ -19,9 +19,22 @@ public class TestaFuncionarios {
 		s.setSalario(1500);
 		s.setRamal(198);
 		
+		Funcionario x = g;
+		
+		System.out.println("X: "+x.getBonificacao());//qual bonificacao sera executada 10% 0u 15%
+
+		
 		g.mostra();
 		t.mostra();
 		s.mostra();
+		
+		ControleDeBonificacoes sistema =  new ControleDeBonificacoes();
+		System.out.println("Total: "+ sistema.getTotalDeBonificacoes());
+		sistema.registra(g);
+		sistema.registra(t);
+		sistema.registra(s);
+		System.out.println("Total: "+ sistema.getTotalDeBonificacoes());
+		
 	}
 
 }
