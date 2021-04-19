@@ -3,6 +3,11 @@ package br.com.opet.banco;
 public class Telefonista extends Funcionario {
 	private int estacaoDeTrabalho;
 	
+	@Override
+	public double getBonificacao() {
+		return this.getSalario() * 0.05;
+	}
+	
 	public int getEstacaoDeTrabalho() {
 		return this.estacaoDeTrabalho;
 	}
@@ -18,5 +23,7 @@ public class Telefonista extends Funcionario {
 		System.out.println("Estação de Trabalho: "+this.getEstacaoDeTrabalho());
 		System.out.println();
 	}
+
+	
 	
 }

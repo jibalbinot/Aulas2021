@@ -8,7 +8,8 @@ public class TestaFuncionarios {
 		g.setSalario(2000);
 		g.setCpf("12345");
 		g.setUsuario("rafael.consentino");
-
+		g.setSenha(45678);
+		
 		Telefonista t = new Telefonista();
 		t.setNome("Carolina Melo");
 		t.setSalario(1000);
@@ -19,8 +20,10 @@ public class TestaFuncionarios {
 		s.setSalario(1500);
 		s.setRamal(198);
 		
+		//apenas para mostrar que uma variável de referencia do tipo Funcionario pode apontar para um objeto Gerente
 		Funcionario x = g;
-		
+		System.out.println("G: "+g.getNome());
+		System.out.println("X: "+x.getNome());
 		System.out.println("X: "+x.getBonificacao());//qual bonificacao sera executada 10% 0u 15%
 
 		

@@ -1,13 +1,21 @@
 package br.com.opet.banco;
 
-public class Funcionario {
+/*
+ * Classe abstrata que servirá de modelo para outras
+ * classes
+ */
+public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
 
-	public double getBonificacao() {
-		return this.getSalario() * 0.10;
-	}
+	/*
+	 * método abstrato não tem corpo(código)
+	 * uma classe filha concreta que estenda
+	 * essa classe deverá implementar este 
+	 * método
+	 */
+	public abstract double getBonificacao();
 
 	public void mostra() {
 		System.out.println("-----------------");
