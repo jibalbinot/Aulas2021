@@ -1,6 +1,6 @@
 package br.com.opet.banco;
 
-public class Diretor extends FuncionarioAutenticavel {
+public class Diretor extends Funcionario implements Autenticavel {
 	private int senha;
 
 	@Override

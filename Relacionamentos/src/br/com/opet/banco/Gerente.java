@@ -1,6 +1,6 @@
 package br.com.opet.banco;
 
-public class Gerente extends FuncionarioAutenticavel {
+public class Gerente extends Funcionario implements Autenticavel {
 	private String usuario;
 	private int senha;
 	private int numeroDeFuncionariosGerenciados;

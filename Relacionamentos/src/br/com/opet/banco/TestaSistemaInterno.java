@@ -18,11 +18,17 @@ public class TestaSistemaInterno {
 	   d.setSenha(111);
 	   d.mostra();
 	   
+	   Cliente c = new Cliente();
+	   c.setNome("Jeysonn");
+	   c.setSenha(222);
+	   c.mostra();
+	   
+	   
 	   System.out.println();
 	   
 	   SistemaInterno si = new SistemaInterno();
 	   si.login(g);//o gerente fez login no SI
 	   si.login(d);//o diretor fez login no SI
-	   
+	   si.login(c);//o cliente fez login no SI
    }
 }

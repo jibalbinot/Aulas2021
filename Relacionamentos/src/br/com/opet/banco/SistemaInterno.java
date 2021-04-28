@@ -3,12 +3,12 @@ package br.com.opet.banco;
 import java.util.Scanner;
 
 public class SistemaInterno {
-	public void login(FuncionarioAutenticavel fa) {
+	public void login(Autenticavel a) {
 		Scanner s = new Scanner(System.in);
-		System.out.print(fa.getNome()+" informe sua senha: ");
+		System.out.print("Informe sua senha: ");
 		int senha = Integer.parseInt(s.nextLine());
-		if(fa.autentica(senha)) {
-			System.out.println("Login efetuado. "+fa.getNome()+" seja bem-vindo(a)!");
+		if(a.autentica(senha)) {
+			System.out.println("Login efetuado. Seja bem-vindo(a)!");
 		} else {
 			System.out.println("Senha incorreta");
 		}
