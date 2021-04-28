@@ -15,7 +15,7 @@ public class TestaFuncionarios {
 		t.setSalario(1000);
 		t.setEstacaoDeTrabalho(13);
 		
-		Secretaria s = new Secretaria();
+		Secretaria s = new SecretariaAdministrativa();
 		s.setNome("Tatiana Andrade");
 		s.setSalario(1500);
 		s.setRamal(198);

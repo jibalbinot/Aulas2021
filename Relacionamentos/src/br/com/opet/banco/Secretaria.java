@@ -1,12 +1,10 @@
 package br.com.opet.banco;
 
-public class Secretaria extends Funcionario {
+public abstract class Secretaria extends Funcionario {
 	private int ramal;
 
 	@Override
-	public double getBonificacao() {
-		return this.getSalario() * 0.1;
-	}
+	public abstract double getBonificacao();
 
 	public int getRamal() {
 		return ramal;
@@ -20,7 +18,7 @@ public class Secretaria extends Funcionario {
 	public void mostra() {
 		System.out.println("Secretária");
 		super.mostra();
-		System.out.println("Ramal: " + this.getRamal());
+		System.out.println("Ramal.......: " + this.getRamal());
 	}
 
 }
