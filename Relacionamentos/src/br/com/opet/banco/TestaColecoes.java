@@ -42,7 +42,7 @@ public class TestaColecoes {
 
 		Cliente[] vc = new Cliente[5]; // vetor de objetos
 		vc[2] = c;
-		vc[4] = new Cliente();
+		vc[4] = new Cliente(); //criando e inserindo o objeto
 		vc[4].setNome("Pedro");
 
 		for (int i = 0; i < vc.length; i++) {
