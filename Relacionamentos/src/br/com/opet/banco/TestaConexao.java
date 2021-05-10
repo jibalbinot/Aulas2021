@@ -41,10 +41,18 @@ public class TestaConexao {
 		 * 2) preparar a cláusula (CRUD - create, read, update ou delete)
 		 * create - insert
 		 */
-		clausula = "INSERT INTO CLIENTE(IDCLIENTE,NOMECLIENTE,EMAILCLIENTE,SENHACLIENTE) VALUES (3,'Marcos','marcos@uniopet.edu.br','teste321')";
+		clausula = "INSERT INTO CLIENTE("
+				+ "IDCLIENTE,"
+				+ "NOMECLIENTE,"
+				+ "EMAILCLIENTE,"
+				+ "SENHACLIENTE) "
+				+ "VALUES (5,"
+				+ "'Tchau',"
+				+ "'tchau@uniopet.edu.br',"
+				+ "'tchau444')";
 		try {
 			ps = c.prepareStatement(clausula);//carrega o comando
-		    ps.execute();//executa o comando no banco
+		    ps.execute();//executa o comando no banco (sem retorno)
 		} catch (SQLException e) {
 			System.out.println("Erro ao executar o insert: " + e);
 		}
@@ -69,7 +77,16 @@ public class TestaConexao {
 			System.out.println("Erro ao executar o select: " + e);
 		}
 		
+		//fechar
+		try {
+			rs.close();
+			ps.close();
+			c.close();
+		} catch (SQLException e) {
+			System.out.println("Erro ao fechar: " + e);
+		}
 		
+		System.out.println("Fechou com sucesso");
 
 	}
 
