@@ -2,7 +2,9 @@ package br.com.opet.banco;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 public class TestaVetores {
 
@@ -62,15 +64,24 @@ public class TestaVetores {
 			lista.add(new ContaCorrente());// criação e inserção
 		}
 		for (int i = 0; i < lista.size(); i++) {
-			lista.get(i).setSaldo(i + 1);// acesso
+			lista.get(i).setSaldo(new Random().nextInt(100));// acesso
 		}
+		System.out.print("Antes: ");
 		for ( ContaCorrente aux : lista) {
-			System.out.println(aux.getSaldo());
+			System.out.print(aux.getSaldo()+" ");
 		}
 		
+		System.out.println();
 		//Desafio: por que não consigo ordenar a lista de ContaCorrente?
-		//Collections.sort(lista);
+		//pois faltava dizer qual o critério e fazemos isso
+		//implementando a interface Comparable que obriga a implementar
+		//o método compareTo
+		Collections.sort(lista);
 		
+		System.out.print("Depois: ");
+		for ( ContaCorrente aux : lista) {
+			System.out.print(aux.getSaldo()+" ");
+		}
 	}
 
 }
